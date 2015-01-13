@@ -3,14 +3,107 @@
 <head>
     <title></title>
     <meta charset="utf-8" />
+    <link href="kendo/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="kendo/styles/kendo.default.min.css" rel="stylesheet" />
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet"/>
 
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
-    <script src="kendo/js/kendo.mobile.min.js"></script>
-    
+    <script src="kendo/js/kendo.all.min.js"></script>
+    <script src="script/app.js"></script>
+    <script src="script/login.js"></script>
 </head>
 <body>
     
+    <!--Login-->
+    
+    <div data-role="view" id="login" data-model="app.login.viewModel">
+        <div class="main-DV">
+            <div class="logo-DV"><p>StudyFix</p></div>
+            <div class="form-DV">
+                <form>
+                    <p>
+                        <input type="text" name="luname" id="luname" data-bind="value:luname" class="txtbox" placeholder="Email Address"/>
+                    </p>
+                    <p>
+                        <input type="password" name="lpwd" id="lpwd" data-bind="value:lpwd" class="txtbox" placeholder="Password"/>
+                    </p>
+                    <p>
+                        <a data-role="button" class="btn" data-bind="click:login">Log In</a>
+                    </p>
+                </form>
+            </div>
+            <div class="other-DV">
+                <p>
+                    <a href="#forgot-pwd">Forgot Your Password?</a>
+                </p>
+                <div style="width:100%;">
+                    <div class="hr-DVL"><hr style="background-color:red;color:red"></div>
+                    <span style="color:#FFF">&nbsp;OR&nbsp;</span>
+                    <div class="hr-DVR"><hr></div>
+                </div>
+                <p>
+                    <a href="#">Need for new account?</a>
+                </p>
+            </div>
+            
+            <!--<div class="login-WDV"></div>-->
+        </div>
+    </div>
+    
+    <!--Forgot password-->
+    <div data-role="view" id="forgot-pwd" data-title="Forgot Password">
+        <div data-role="header">
+            <div data-role="navbar" class="nvbar">
+                <a data-role="backbutton" data-align="left" class="backimg"></a>
+                <span data-role="view-title"></span>
+            </div>
+        </div>
+        <div data-role="content">
+            <div class="main-DV">
+                <div class="form-DV">
+                    <form>
+                        <p>
+                            <input type="text" name="luname" id="luname" data-bind="value:luname" class="txtbox" placeholder="Username"/>
+                        </p>
+                        <p>
+                            <a data-role="button" class="btn" data-bind="click:">Submit</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Registration-->
+    <div data-role="view" id="signup" data-title="New User">
+        <div data-role="header">
+            <div data-role="navbar" class="nvbar">
+                <a data-role="backbutton" data-align="left" class="backimg"></a>
+                <span data-role="view-title"></span>
+            </div>
+        </div>
+        <div data-role="content">
+            <div class="main-DV">
+                <div class="form-DV">
+                    <form>
+                       <p>
+                           <input type="text" name="sname" id="sname" data-bind="value:sname" class="txtbox" placeholder="Your Name"/>
+                       </p>
+                       <p>
+                           <input type="text" name="semail" id="semail" data-bind="value:semail" class="txtbox" placeholder="Email Address"/>
+                       </p>
+                       <p>
+                           <input type="text" name="smbnum" id="smbnum" data-bind="value:smbnum" class="txtbox" placeholder="Mobile Number"/>
+                       </p> 
+                       <p>
+                           <textarea style="width:100%;height:120px;" placeholder="Describe yourself here..."></textarea>
+                       </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

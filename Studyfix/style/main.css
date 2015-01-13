@@ -1,0 +1,48 @@
+body {
+}
+
+/*FONT*/
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('font/Blazed.ttf');
+}
+
+/*Login*/
+
+#login .km-content{background-image:url('image/pattern-a9te.png')}
+#login .main-DV,#forgot-pwd .main-DV,#signup .main-DV{width:90%;height:auto;margin:0px auto;}
+#login .main-DV .form-DV{width:100%;height:auto;margin:0px auto;margin-top:30px;}
+#login .main-DV .form-DV p,#forgot-pwd .main-DV .form-DV p{margin:20px 0px 0px 0px}
+#login .main-DV .logo-DV{width:95%;margin:0px auto;margin-top:30px;}
+#login .main-DV .logo-DV p{font-size:35px;color:#6DD5A6;font-family:myFirstFont}
+
+#login .main-DV .form-DV p .txtbox,#forgot-pwd .main-DV .form-DV p .txtbox{width:100%;height:35px;border:1px solid #CCC;border-style:inset;border-radius:15px;text-align:center;}
+::-webkit-input-placeholder { color:#999;font-size:14px;line-height:14px;font-weight:normal;letter-spacing:2px; font-family:times}
+::-moz-placeholder { color:#999;font-size:14px;line-height:14px;font-weight:normal;letter-spacing:2px;  } /* firefox 19+ */
+:-ms-input-placeholder { color:#999;font-size:14px;line-height:14px;font-weight:normal;letter-spacing:2px;  } /* ie */
+input:-moz-placeholder { color:#999;font-size:14px;line-height:14px;font-weight:normal;letter-spacing:2px;  }
+
+#login .main-DV .form-DV p .btn,#forgot-pwd .main-DV .form-DV p .btn{width:100%;border-radius:15px;background-color:#6DD5A6;color:#FFF;font-family:times;font-size:18px;height:35px;line-height:12px;}
+#login .main-DV .other-DV{width:90%;height:auto;margin:0px auto;margin-top:40px;}
+#login .main-DV .other-DV p{text-align:center;color:#828D9F;font-family:times}
+#login .main-DV .other-DV p a{text-decoration:none;}
+.other-DV .hr-DVL{width:44.5%;float:left}
+.other-DV .hr-DVL hr, .other-DV .hr-DVR hr{border-color:#6DD5A6}
+.other-DV .hr-DVR{width:44.5%;float:right}
+#login .main-DV .login-WDV{width:90%;height:35px;margin:0px auto;margin-top:65px;background:url(image/fb1.png);background-size:100% 100%;}
+
+
+/*Forgot password*/
+#forgot-pwd .km-content{background-image:url('image/pattern-a9te.png')}
+.nvbar{background-color:#4E5665 !important;border-bottom:2px solid #40A981 !important;color:#FFF!important}
+.nvbar span{font-size:17px;font-family:times}
+.nvbar .backimg{background-image:url(image/arrow.png) !important;background-size:100% 100%;width:40px;height:30px;border:0px solid #CCC !important}
+#forgot-pwd .main-DV .form-DV{width:100%;height:auto;margin:0px auto;margin-top:80px;}
+
+/*signup*/
+#signup .km-content{background-image:url('image/pattern-a9te.png')}
+#signup .main-DV .form-DV{width:100%;height:auto;margin:0px auto;margin-top:30px;}
+#signup .main-DV .form-DV p .txtbox{width:100%;height:35px;border:1px solid #CCC;border-style:inset;border-radius:15px;padding-left:15px;}
+
+
