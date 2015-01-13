@@ -1,0 +1,37 @@
+{
+  "ProjectName": "Studyfix",
+  "ProjectGuid": "b530ae55-1e2d-4d57-ae23-8476fccc681b",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.Studyfix",
+  "DisplayName": "Studyfix",
+  "Author": "",
+  "Description": "",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.5.0",
+  "AndroidPermissions": [],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{4151a8a9-3767-4899-b9e2-81695c20114e}",
+  "WP8ProductID": "{3d6b6bd0-1d31-4d53-b735-836e21cfda32}",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
