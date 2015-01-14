@@ -13,6 +13,7 @@
     <script src="kendo/js/kendo.all.min.js"></script>
     <script src="script/app.js"></script>
     <script src="script/login.js"></script>
+    <script src="script/signup.js"></script>
 </head>
 <body>
     
@@ -77,7 +78,7 @@
     </div>
     
     <!--Registration-->
-    <div data-role="view" id="signup" data-title="New User">
+    <div data-role="view" id="signup" data-title="New User" data-model="app.signup.viewModel" data-show="app.signup.viewModel.show">
         <div data-role="header">
             <div data-role="navbar" class="nvbar">
                 <a data-role="backbutton" data-align="left" class="backimg"></a>
@@ -98,8 +99,20 @@
                            <input type="text" name="smbnum" id="smbnum" data-bind="value:smbnum" class="txtbox" placeholder="Mobile Number"/>
                        </p> 
                        <p>
-                           <textarea style="width:100%;height:120px;" placeholder="Describe yourself here..."></textarea>
+                           <input id="genderList" style="width:100%"/>
                        </p>
+                       <p>
+                           <input id="professionList" style="width:100%"/>
+                       </p>
+                        <p>
+                            <input type="text" name="sempname" id="sempname" data-bind="value:sempname" class="txtbox" placeholder="Comapany name"/>
+                        </p>
+                        <p>
+                            <input type="text" name="scolname" id="scolname" data-bind="value:scolname" class="txtbox" placeholder="Collage Name"/>
+                        </p>
+                        <p>
+                            <a data-role="button" class="btn">Sign Up</a>
+                        </p>
                     </form>
                 </div>
             </div>
